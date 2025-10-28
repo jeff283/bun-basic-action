@@ -1,0 +1,15 @@
+name: Test Bun Basic Action
+
+on:
+    push:
+        branches:
+            - main
+    workflow_dispatch:
+
+jobs:
+    test:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Run Bun Basic Action
+              uses: jeff283/bun-basic-action@main
